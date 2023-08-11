@@ -15,6 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="100in"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
         android:paddingVertical="30dp"
         android:background="@drawable/rectangle"
         />
@@ -27,200 +29,148 @@
         android:layout_height="wrap_content"
         android:width="100in"
         android:paddingVertical="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectangle"
         />
 
     <!-- 3. Button -->
-    <TableLayout
+    <!-- Button Grid -->
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        >
+        android:rowCount="5"
+        android:columnCount="4"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
 
-        <!-- 3.1. Row 1  -->
-        <TableRow>
-            <Button
-                android:id="@+id/btnNumberOne"
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:text="1"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btnNumberSeven"
+            style="@style/CalculatorButton"
+            android:text="7"
+            android:layout_margin="5dp"
+            />
 
-            <Button
-                android:id="@+id/btnNumberTwo"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="2"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
+        <Button
+            android:id="@+id/btnNumberEight"
+            style="@style/CalculatorButton"
+            android:text="8"
+            android:layout_margin="5dp"
 
-                />
+            />
 
-            <Button
-                android:id="@+id/btnNumberThree"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="3"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+        <Button
+            android:id="@+id/btnNumberNine"
+            style="@style/CalculatorButton"
+            android:text="9"
+            android:layout_margin="5dp"
 
-            <Button
-                android:id="@+id/btnSum"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="+"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
-        </TableRow>
+            />
 
-        <!-- 3.2. Row 2  -->
-        <TableRow>
-            <Button
-                android:id="@+id/btnNumberFour"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="4"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalculatorButton"
+            android:text="/"
+            android:layout_margin="5dp"
 
-            <Button
-                android:id="@+id/btnNumberFive"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="5"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+            />
 
-            <Button
-                android:id="@+id/btnNumberSix"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="6"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btnNumberFour"
+            style="@style/CalculatorButton"
+            android:text="4"
+            android:layout_margin="5dp"
 
-            <Button
-                android:id="@+id/btnSub"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="-"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
-        </TableRow>
+            />
 
-        <!-- 3.3. Row 3  -->
-        <TableRow>
-            <Button
-                android:id="@+id/btnNumberSeven"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="7"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+        <Button
+            android:id="@+id/btnNumberFive"
+            style="@style/CalculatorButton"
+            android:text="5"
+            android:layout_margin="5dp"
 
-            <Button
-                android:id="@+id/btnNumberEight"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="8"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+            />
 
-            <Button
-                android:id="@+id/btnNumberNine"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="9"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+        <Button
+            android:id="@+id/btnNumberSix"
+            style="@style/CalculatorButton"
+            android:text="6"
+            android:layout_margin="5dp"
 
-            <Button
-                android:id="@+id/btnMulti"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="X"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
-        </TableRow>
+            />
 
-        <!-- 3.4. Row 4  -->
-        <TableRow>
-            <Button
-                android:id="@+id/btnNumberZero"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="0"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/CalculatorButton"
+            android:text="×"
+            android:layout_margin="5dp"
 
-            <Button
-                android:id="@+id/btnNumberEqual"
-                android:layout_width="120dp"
-                android:layout_height="70dp"
-                android:text="="
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
+            />
 
-            <Button
-                android:id="@+id/btnNumberDivide"
-                android:layout_width="90dp"
-                android:layout_height="70dp"
-                android:text="/"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="#000"
-                android:layout_margin="5dp"
-                />
-        </TableRow>
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btnNumberOne"
+            style="@style/CalculatorButton"
+            android:text="1"
+            android:layout_margin="5dp"
 
+            />
 
-    </TableLayout>
+        <Button
+            android:id="@+id/btnNumberTwo"
+            style="@style/CalculatorButton"
+            android:text="2"
+            android:layout_margin="5dp"
 
+            />
 
+        <Button
+            android:id="@+id/btnNumberThree"
+            style="@style/CalculatorButton"
+            android:text="3"
+            android:layout_margin="5dp"
 
+            />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/CalculatorButton"
+            android:text="-"
+            android:layout_margin="5dp"
+
+            />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btnNumberZero"
+            style="@style/CalculatorButton"
+            android:text="0"
+            android:layout_gravity="fill"
+            android:layout_columnSpan="2"
+            android:layout_margin="5dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnEqual"
+            style="@style/CalculatorButton"
+            android:text="="
+            android:layout_margin="5dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnSum"
+            style="@style/CalculatorButton"
+            android:text="+"
+            android:layout_margin="5dp"
+
+            />
+
+    </GridLayout>
 
 </LinearLayout>
